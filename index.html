@@ -1,0 +1,154 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lepenjab - Restaurant Indien à Saint-Brieuc</title>
+    <script type="importmap">
+    {
+      "imports": {
+        "scrollreveal": "https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.es.js",
+        "tealight": "https://cdn.jsdelivr.net/npm/tealight/src/tealight.js"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="main-nav">
+            <a href="#accueil" class="nav-logo">
+                <img src="logo.png" alt="Logo Lepenjab">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#accueil" class="nav-link active">Accueil</a></li>
+                <li><a href="#apropos" class="nav-link">À propos</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#livraison" class="nav-link">Livraison</a></li>
+                <li><a href="#reservations" class="nav-link">Réservations</a></li>
+                <li><a href="#galerie" class="nav-link">Galerie</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+             <button class="mobile-nav-toggle" aria-label="Ouvrir le menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="accueil" class="hero-section">
+            <div class="hero-content">
+                <h1>Bienvenue au restaurant LePenjab</h1>
+                <p>Découvrez les saveurs authentiques de l'Inde dans une ambiance familiale et chaleureuse. Notre cuisine traditionnelle est une invitation au voyage, un héritage que nous partageons avec passion.</p>
+                <div class="hero-cta">
+                    <a href="#menu" class="btn btn-primary">Voir le Menu</a>
+                    <a href="#reservations" class="btn btn-secondary">Réserver une Table</a>
+                    <a href="https://www.ubereats.com/fr/store/le-penjab/Vn3ZZ__QWneLVOlquxqmxQ?srsltid=AfmBOopZ1rgSRw4wv5RzOtwMBOT5qA7--H3U5hdq8ApjSkNi2FxFBMKq" target="_blank" rel="noopener noreferrer" class="btn btn-secondary uber-eats-btn">
+                        <i class="fas fa-motorcycle"></i> Commander sur Uber Eats
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="apropos" class="content-section">
+            <div class="container about-container">
+                <div class="about-text">
+                    <h2>Une histoire de famille et de saveurs</h2>
+                    <p>Depuis notre ouverture, Lepenjab est plus qu'un restaurant : c'est notre maison, et nous vous y accueillons comme nos invités d'honneur. Notre philosophie est simple : utiliser des ingrédients frais et des épices moulues sur place pour recréer les plats qui ont bercé notre enfance. Chaque recette est un secret de famille, transmis de génération en génération, pour vous offrir une expérience culinaire inoubliable au cœur de Saint-Brieuc.</p>
+                </div>
+                <div class="about-image">
+                    <img src="about-image.png" alt="Plat de butter chicken">
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="content-section bg-light">
+            <div class="container">
+                <h2 class="text-center">Notre Menu</h2>
+                <p class="text-center subtitle">Un aperçu de nos spécialités</p>
+                <div class="menu-grid" id="menu-grid">
+                    <!-- The menu is now generated dynamically by menu.js -->
+                </div>
+            </div>
+        </section>
+
+        <section id="livraison" class="content-section bg-dark">
+            <div class="container text-center">
+                <h2>Commandez en Ligne</h2>
+                <p class="subtitle">Envie de savourer nos plats chez vous ? Retrouvez-nous sur Uber Eats pour une livraison rapide.</p>
+                <a href="https://www.ubereats.com/fr/store/le-penjab/Vn3ZZ__QWneLVOlquxqmxQ?srsltid=AfmBOopZ1rgSRw4wv5RzOtwMBOT5qA7--H3U5hdq8ApjSkNi2FxFBMKq" target="_blank" rel="noopener noreferrer" class="btn btn-primary uber-eats-btn">
+                    <i class="fas fa-motorcycle"></i> Commander sur Uber Eats
+                </a>
+            </div>
+        </section>
+
+        <section id="reservations" class="content-section bg-light">
+            <div class="container text-center">
+                 <h2 class="text-center">Réserver une table</h2>
+                 <p class="text-center subtitle">Pour garantir votre table, nous vous invitons à nous appeler directement. Nous serons ravis de prendre votre réservation par téléphone.</p>
+                 <div class="reservation-phone">
+                    <p>Appelez-nous au :</p>
+                    <a href="tel:+33296680871" class="phone-number">02 96 68 08 71</a>
+                 </div>
+            </div>
+        </section>
+
+        <section id="galerie" class="content-section">
+            <div class="container">
+                <h2 class="text-center">Galerie Photos</h2>
+                <p class="text-center subtitle">L'ambiance et les couleurs du Lepenjab.</p>
+                <div class="gallery-grid">
+                    <a href="gallery1.png"><img src="gallery1.png" alt="Plat de poulet tandoori"></a>
+                    <a href="gallery2.png"><img src="gallery2.png" alt="Plat de palak paneer"></a>
+                    <a href="gallery3.png"><img src="gallery3.png" alt="Assortiment d'entrées indiennes"></a>
+                    <a href="gallery4.png"><img src="gallery4.png" alt="Plat d'agneau korma"></a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2>Nous Contacter</h2>
+                     <p><i class="fas fa-map-marker-alt"></i> 12 Pl. du Martray, 22000 Saint-Brieuc</p>
+                    <p><i class="fas fa-phone"></i> 02 96 68 08 71</p>
+                    
+                    <h3>Horaires d'ouverture</h3>
+                    <p>Mardi - Vendredi : 12:00–14:30 / 19:00–22:30</p>
+                    <p>Samedi : 12:00–14:00 / 19:00–22:30</p>
+                    <p>Dimanche : 12:00–14:30 / 19:00–22:00</p>
+                    <p>Lundi : Fermé</p>
+                    
+                    <h3>Suivez-nous</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/share/16dYtQyf7r/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/lepenjab.saintbrieuc?igsh=MW0wZWQ5bXJlbTltMw==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://vm.tiktok.com/ZNdDRVeKA/" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2644.204555819717!2d-2.758411923610931!3d48.51446772714421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486b8b073069152b%3A0xf67742d45136f861!2s12%20Pl.%20du%20Martray%2C%2022000%20Saint-Brieuc!5e0!3m2!1sfr!2sfr!4v1709741516104!5m2!1sfr!2sfr" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2024 Lepenjab. Tous droits réservés. Site créé avec passion.</p>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
