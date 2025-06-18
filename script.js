@@ -1,10 +1,7 @@
 import ScrollReveal from 'scrollreveal';
 import tealight from 'tealight';
-import { renderMenu } from './menu.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-
-    renderMenu();
 
     // --- Mobile Navigation ---
     const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
